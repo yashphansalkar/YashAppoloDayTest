@@ -11,22 +11,3 @@ sandbox:
 homepage:
   enabled: false
 
-cors:
-  origins:
-    - https://studio.apollographql.com
-  allow_credentials: true
-
-# This would make debugging easier, but should be a per subgraph basis for production
-include_subgraph_errors:
-  all: true # Propagate errors from all subgraphs
-
-subscription:
-  mode:
-    passthrough:
-       # docker setup, for local setup comment out the following section
-       subgraphs:
-        products:
-         path: /
-
-## Enter Workshop Module Configs Below
-
